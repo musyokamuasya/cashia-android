@@ -21,5 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Cashia Checkout"
 include(":app")
-include(":core")
-include(":ui")
+include(":cashia-core")
+include(":cashia-ui")
