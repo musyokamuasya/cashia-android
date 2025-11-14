@@ -1,7 +1,6 @@
 package com.cashia.ui
 
-
-import android.net.Uri
+import androidx.core.net.toUri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.cashia.core.Cashia
@@ -49,7 +48,7 @@ class CheckoutViewModel : ViewModel() {
      */
     fun handleUrlNavigation(url: String) {
         // Parse URL to check for success/error callbacks
-        val uri = Uri.parse(url)
+        val uri = url.toUri()
         val requestId = uri.getQueryParameter("requestId")
         val status = uri.getQueryParameter("status")
 

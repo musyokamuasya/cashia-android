@@ -67,8 +67,23 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
     testImplementation(libs.junit)
+
+    testImplementation(libs.mockk)
+    testImplementation(libs.mockk)
+
+    testImplementation(libs.androidx.core.testing)
+    testImplementation(libs.kotlinx.coroutines.test)
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    androidTestImplementation(libs.androidx.ui.test.junit4)
+    debugImplementation(libs.androidx.ui.test.manifest)
+//    androidTestImplementation(libs.ui.test.junit4)
+
+    androidTestImplementation(libs.mockk)
+
+
 }
 
 afterEvaluate {
